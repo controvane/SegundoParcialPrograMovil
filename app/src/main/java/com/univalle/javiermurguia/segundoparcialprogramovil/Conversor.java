@@ -17,6 +17,7 @@ public class Conversor extends AppCompatActivity {
     private Button convertir;
     private EditText textoPrimerArgumento;
     private TextView textoResultado;
+    private Button botonVolver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class Conversor extends AppCompatActivity {
         this.convertir = (Button) findViewById(R.id.botonOperacion);
         this.textoPrimerArgumento = (EditText) findViewById(R.id.textoPrimerArgumento);
         this.textoResultado = (TextView) findViewById(R.id.textoResultado);
+        this.botonVolver = (Button) findViewById(R.id.botonVolver);
         this.textoResultado.setFocusable(false);
         switch (this.operacion){
             case "CentAKelv":
@@ -93,41 +95,49 @@ public class Conversor extends AppCompatActivity {
                     switch (operacion){
                         case "CentAKelv":
                             arg = arg + 273;
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" °K");
                             break;
                         case "CentAFahr":
                             arg = (arg*(9/5))+32;
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" °F");
                             break;
                         case "FahrACent":
                             arg = ((arg-32)*(5/9));
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" °C");
                             break;
                         case "KelvAFahr":
                             arg = ((arg-273)*(9/5))+32;
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" °F");
                             break;
                         case "MetACent":
                             arg = arg * (100);
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" cm");
                             break;
                         case "CentAMet":
                             arg = arg / (100);
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" m");
                             break;
                         case "CentAInch":
                             arg = arg/(2.54);
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" inch");
                             break;
                         case "InchACent":
                             arg = arg * (2.54);
-                            Conversor.this.setTextoResultado(arg+"");
+                            Conversor.this.setTextoResultado(arg+" cm");
                             break;
                     }
                 }
                 catch(Exception ex){
 
                 }
+            }
+        });
+
+        //no hace nada
+        this.botonVolver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }
