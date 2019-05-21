@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/cajaMayor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/cajaTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textoTituloTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperatura" />
+
+            <LinearLayout
+                android:id="@+id/cajaBotonesTemperaturaArriba"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botonCentAKelv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Centigrados a Kelvin" />
+
+                <Button
+                    android:id="@+id/botonCentaFahr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Centigrados a Fahrenheit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cajaBotonesTemperaturaAbajo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botonFahrACent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Fahrenheit a Centigrados" />
+
+                <Button
+                    android:id="@+id/botonKelvAFahr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Kelvin a Fahrenheit" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cajaDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textoTituloDistancia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distancia" />
+
+            <LinearLayout
+                android:id="@+id/cajaBotonesDistanciaArriba"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botonMetACent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Metros a Centimetros" />
+
+                <Button
+                    android:id="@+id/botonCentAMet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Centimetros a Metros" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cajaBotonesDistanciaAbajo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botonCentAInch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Centimetros a Pulgadas" />
+
+                <Button
+                    android:id="@+id/botonInchACent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Pulgadas a Centimetros" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
