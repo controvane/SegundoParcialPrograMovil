@@ -44,41 +44,49 @@ public class Conversor extends AppCompatActivity {
         this.textoResultado.setFocusable(false);
         switch (this.operacion){
             case "CentAKelv":
+                this.setTitle("Centigrados a Kelvin");
                 this.textoOperacion.setText("Centigrados a Kelvin");
                 this.textoPrimerArgumento.setHint("Centigrados");
                 this.textoResultado.setHint("Kelvin");
                 break;
             case "CentAFahr":
+                this.setTitle("Centigrados a Fahrenheit");
                 this.textoOperacion.setText("Centigrados a Fahrenheit");
                 this.textoPrimerArgumento.setHint("Centigrados");
                 this.textoResultado.setHint("Fahrenheit");
                 break;
             case "FahrACent":
+                this.setTitle("Fahrenheit a Centigrados");
                 this.textoOperacion.setText("Fahrenheit a Centigrados");
                 this.textoPrimerArgumento.setHint("Fahrenheit");
                 this.textoResultado.setHint("Centigrados");
                 break;
             case "KelvAFahr":
+                this.setTitle("Kelvin a Fahrenheit");
                 this.textoOperacion.setText("Kelvin a Fahrenheit");
                 this.textoPrimerArgumento.setHint("Kelvin");
                 this.textoResultado.setHint("Fahrenheit");
                 break;
             case "MetACent":
+                this.setTitle("Metros a Centimetros");
                 this.textoOperacion.setText("Metros a Centimetros");
                 this.textoPrimerArgumento.setHint("Metros");
                 this.textoResultado.setHint("Centimetros");
                 break;
             case "CentAMet":
+                this.setTitle("Centimetros a Metros");
                 this.textoOperacion.setText("Centimetros a Metros");
                 this.textoPrimerArgumento.setHint("Centimetros");
                 this.textoResultado.setHint("Metros");
                 break;
             case "CentAInch":
+                this.setTitle("Centimetros a Pulgadas");
                 this.textoOperacion.setText("Centimetros a Pulgadas");
                 this.textoPrimerArgumento.setHint("Centimetros");
                 this.textoResultado.setHint("Pulgadas");
                 break;
             case "InchACent":
+                this.setTitle("Pulgadas a Centimetros");
                 this.textoOperacion.setText("Pulgadas a Centimetros");
                 this.textoPrimerArgumento.setHint("Pulgadas");
                 this.textoResultado.setHint("Centimetros");
